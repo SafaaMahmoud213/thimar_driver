@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
+          // App Entry Point
           return MaterialApp(
             navigatorKey: navigatorKey,
             localizationsDelegates: context.localizationDelegates,
