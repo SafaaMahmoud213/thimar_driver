@@ -13,7 +13,7 @@ A detailed guide for multiple platforms setup could be find [here](https://flutt
 
 ### Setup Project
 
-- Clone this repository using `git clone https://github.com/SafaaMahmoud213/Wash-App.git`.
+- Clone this repository using `git clone https://github.com/SafaaMahmoud213/thimar_driver.git`.
 - `cd` into `Thimar_Driver`.
 - `flutter pub get` to get all the dependencies.
 
