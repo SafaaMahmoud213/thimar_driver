@@ -1,16 +1,61 @@
-# flutter_application_1
+# Wash_App APP
 
-A new Flutter project.
+This App is a cross platform application built in [flutter](https://flutter.dev/) .
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these instructions to build and run the project
 
-A few resources to get you started if this is your first Flutter project:
+### Setup Flutter
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A detailed guide for multiple platforms setup could be find [here](https://flutter.dev/docs/get-started/install/)
+
+### Setup Project
+
+- Clone this repository using `git clone https://github.com/SafaaMahmoud213/Wash-App.git`.
+- `cd` into `Thimar_Driver`.
+- `flutter pub get` to get all the dependencies.
+
+### Running the app
+
+Make sure you have a connected Android/iOS device/simulator and run the following command to build and run the app in debug mode.
+
+`flutter run`
+
+## Project Structure
+
+```bash
+Wash_App/lib/
+├── bloc/                           # Main Statemangement files                          
+|   └── bloc_observer.dart          # Observe bloc states i.e Loading, Success, Error
+|   └── app_bloc/                  # App Machine Management
+├── core/                           # App Core files
+|   └── app/                        # App State Machine
+|   |   └── app_body.dart 
+|   |   └── app_data.dart
+|   |   └── app_repository.dart 
+|   |   └── app_storage.dart 
+|   └── constant/                   # App Constants
+|   |   └── colors
+|   |   └── style
+|       ...
+|   └── error/                      # Exceptions Models
+|   |   └── exceptions.dart
+|   └── utils/                      # App Helpers
+|   |   └── app_navigator.dart
+|   └── widgets/                    # App Custom Widgets
+├── features/                       # App Features
+|   └── feature/
+|   |   └── data/
+|   |   |   └── datasource/
+|   |   |   └── model/
+|   |   |   └── repositories/              
+|   |   └── presentation/
+|   |   |   └── cubit/
+|   |   |   └── pages/
+|   |   |   └── widgets/                               
+|   ...
+├── injection_container.dart        # dependency injection using get_it
+└── main.dart                       # <3 of the app
+```
